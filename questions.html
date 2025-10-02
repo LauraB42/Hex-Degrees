@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex-Degrees</title>
+    <link rel="icon" type="image/png" href="sigma.png"> 
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+
+  #button{
+    border: 1px solid white; 
+    border-radius: 5px;
+  }
+</style>
+<body>
+
+<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" >
+  <div class="container-fluid">
+    <img src="mathematical.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+    <a class="navbar-brand ps-2" href="main.html">Hex-Degrees</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="questions.html">Questions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="connections.html">Connections</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+        <button id="button" class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<h1 style="margin: 10px; text-align: center;" class="display-1">Hex-Degrees</h1>
+<p style="margin: 10px; text-align: center;" class="lead">
+  Solve problems...
+</p>
+
+<div class="container text-center my-4">
+  <!-- stretch children to same height -->
+  <div class="row g-4 justify-content-center align-items-stretch">
+
+    <!-- Left: BIG CARD (col-12 on xs, col-6 on md+) -->
+    <div class="col-12 col-md-6 d-flex">
+      <div class="card mx-auto overflow-hidden w-100 h-100" style="max-width: 400px;">
+        <div class="card-body text-center">
+          <img src="OIP.jfif" class="rounded-circle d-block mx-auto mb-3"
+               style="width:min(5rem,35vw);height:min(5rem,35vw);object-fit:cover;" alt="profile pic">
+          <h5 class="card-title mb-1"><a href="https://en.wikipedia.org/wiki/Riemann_hypothesis" class="card-link">Riemann hypothesis</a></h5>
+          <p class="card-text mb-2 p-3">The Riemann hypothesis is a conjecture in mathematics that all non-trivial zeros of the Riemann zeta function have a real part equal to 1/2. This hypothesis is significant because it implies results about the distribution of prime numbers and has profound implications across various mathematical domains. It remains one of the most important unsolved problems in pure mathematics and is one of the Millennium Prize Problems offered a million dollars for a solution. The hypothesis has connections to number theory, quantum mechanics, and cryptography, making it a central point of interest in modern mathematics</p>
+          <p class="fs-6 text-body-secondary mb-3">3+ Connections commenting on it</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Answer</button></li>
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Connect</button></li>
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Reject</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: 4 SMALL CARDS occupying the same total height as the big card -->
+    <div class="col-12 col-md-6">
+      <div class="four-up">
+        <!-- Small card 1 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="Prime.webp" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="https://www.bing.com/ck/a?!&&p=21d80ff961453ea7b855f492fc7271e1c0dcdc98af26ea29dd9b33fc0fe2956aJmltdHM9MTc1OTI3NjgwMA&ptn=3&ver=2&hsh=4&fclid=323bd006-6e95-6a69-25f8-c57f6fef6b94&psq=find+the+next+biggest+prime+number&u=a1aHR0cHM6Ly93d3cubWVyc2VubmUub3JnL3ByaW1lcy8_cHJlc3M9TTEzNjI3OTg0MQ" class="card-link">Find the next biggest prime number</a></h6>
+            <p class="mb-1"><small>Prime numbers have long fascinated both amateur and professional mathematicians. An integer greater than one is called a prime number if its only divisors are one and itself. The first prime numbers are 2, 3, 5, 7, 11, etc. For example, the number 10 is not prime because it is divisible by 2 and 5. A Mersenne prime is a prime number of the form 2P-1. The first Mersenne primes are 3, 7, 31, and 127 corresponding to P = 2, 3, 5, and 7 respectively. There are now 52 known Mersenne primes.</small></p>
+            <p class="text-body-secondary mb-2"><small>2+ Connections commenting on it</small></p>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Answer</button>
+        </div>
+
+        <!-- Small card 2 -->
+        <div class="card h-100">
+         <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="cc.jpg" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="https://www.intmath.com/blog/mathematics/10-math-equations-that-have-never-been-solved-12456" class="card-link">The Collatz Conjecture</a></h6>
+            <p class="mb-1"><small>Equation: 3n+1 where n is a positive integer n/2 where n is a non-negative integer.  Prove the answer end by cycling through 1,4,2,1,4,2,1,… if n is a positive integer.</small></p>
+            <p class="text-body-secondary mb-2"><small>1+ Connections commenting on it</small></p>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Answer</button>
+         </div>
+        <!-- Small card 3 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="" class="card-link">Question</a></h6>
+            <p class="mb-1"><small>igiugiuiguguigigigiiug</small></p>
+            <p class="text-body-secondary mb-2"><small>5+ Connections commenting on it</small></p>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Answer</button>
+        </div>
+        <!-- Small card 4 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="" class="card-link">Question</a></h6>
+            <p class="mb-1"><small>igiugiuiguguigigigiiug</small></p>
+            <p class="text-body-secondary mb-2"><small>3+ Connections commenting on it</small></p>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Answer</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>    
+</body>
+</html>

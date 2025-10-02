@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hex-Degrees Connections Page</title>
+  <link rel="icon" type="image/png" href="sigma.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    #button { border: 1px solid white; border-radius: 5px; }
+
+    /* Make the right column a 2×2 grid that stretches to match the big card's height */
+    .four-up {
+      display: grid;
+      gap: 1rem;        /* matches Bootstrap g-4-ish spacing */
+      height: 100%;
+    }
+    /* From md and up: 2×2 grid */
+    @media (min-width: 768px) {
+      .four-up {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+    /* Below md: stack the small cards naturally */
+    @media (max-width: 767.98px) {
+      .four-up {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <img src="mathematical.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-top">
+    <a class="navbar-brand ps-2" href="main.html">Hex-Degrees</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="questions.html">Questions</a></li>
+        <li class="nav-item"><a class="nav-link" href="connections.html">Connections</a></li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+        <button id="button" class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<h1 class="display-1 text-center my-2">Hex-Degrees</h1>
+<p class="lead text-center mb-4">Make connections...</p>
+
+<div class="container text-center my-4">
+  <!-- stretch children to same height -->
+  <div class="row g-4 justify-content-center align-items-stretch">
+
+    <!-- Left: BIG CARD (col-12 on xs, col-6 on md+) -->
+    <div class="col-12 col-md-6 d-flex">
+      <div class="card mx-auto overflow-hidden w-100 h-100" style="max-width: 400px;">
+        <div class="card-body text-center">
+          <img src="Laura Ball.jpg" class="rounded-circle d-block mx-auto mb-3"
+               style="width:min(5rem,35vw);height:min(5rem,35vw);object-fit:cover;" alt="profile pic">
+          <h5 class="card-title mb-1"><a href="profile.html" class="card-link">Laura Ball</a></h5>
+          <p class="card-text mb-2">Full Stack Developer, Mathematician, Teacher</p>
+          <p class="fs-6 text-body-secondary mb-3">Last login 2 days ago</p>
+          <div class="d-flex flex-wrap justify-content-center align-items-center text-body-secondary gap-3" style="font-size:.8em;">
+            <span style="font-size:.75em;">5+ Common Connections</span>
+            <div class="d-flex align-items-center">
+              <img src="Laura Ball.jpg" style="width:2em;height:2em;object-fit:cover;border-radius:50%;border:1px solid #fff;position:relative;z-index:3;margin-left:-.66em;" alt="">
+              <img src="Laura Ball.jpg" style="width:2em;height:2em;object-fit:cover;border-radius:50%;border:1px solid #fff;position:relative;z-index:2;margin-left:-.66em;" alt="">
+              <img src="Laura Ball.jpg" style="width:2em;height:2em;object-fit:cover;border-radius:50%;border:1px solid #fff;position:relative;z-index:1;margin-left:-.66em;" alt="">
+            </div>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Answer</button></li>
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Connect</button></li>
+          <li class="list-group-item text-center"><button type="button" class="btn btn-secondary w-100">Reject</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Right: 4 SMALL CARDS occupying the same total height as the big card -->
+    <div class="col-12 col-md-6">
+      <div class="four-up">
+        <!-- Small card 1 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="Laura Ball.jpg" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="profile.html" class="card-link">Laura Ball</a></h6>
+            <p class="mb-1"><small>Full Stack Developer, Mathematician</small></p>
+            <p class="text-body-secondary mb-2"><small>Last login 2 days ago</small></p>
+            <span style="font-size:.75em;">4+ Common Connections</span>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Connect</button>
+        </div>
+        <!-- Small card 2 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="Laura Ball.jpg" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="profile.html" class="card-link">Laura Ball</a></h6>
+            <p class="mb-1"><small>Mathematician, Teacher</small></p>
+            <p class="text-body-secondary mb-2"><small>Last login 5 days ago</small></p>
+            <span style="font-size:.75em;">7+ Common Connections</span>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Connect</button>
+        </div>
+        <!-- Small card 3 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="Laura Ball.jpg" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="profile.html" class="card-link">Laura Ball</a></h6>
+            <p class="mb-1"><small>Developer</small></p>
+            <p class="text-body-secondary mb-2"><small>Last login 1 day ago</small></p>
+            <span style="font-size:.75em;">2+ Common Connections</span>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Connect</button>
+        </div>
+        <!-- Small card 4 -->
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <img src="Laura Ball.jpg" class="rounded-circle d-block mx-auto mb-2"
+                 style="width:min(3rem,32vw);height:min(3rem,32vw);object-fit:cover;" alt="">
+            <h6 class="mb-1"><a href="profile.html" class="card-link">Laura Ball</a></h6>
+            <p class="mb-1"><small>Teacher</small></p>
+            <p class="text-body-secondary mb-2"><small>Last login 3 weeks ago</small></p>
+            <span style="font-size:.75em;">1+ Common Connections</span>
+          </div>
+          <button type="button" class="btn btn-secondary w-100">Connect</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
